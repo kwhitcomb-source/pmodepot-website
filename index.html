@@ -483,6 +483,35 @@
 
     .portal-arrow { margin-top: 1rem; font-size: 2rem; position: relative; z-index: 1; }
 
+    /* PCMInst buttons (Portals section) */
+    .portal-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 1.35rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+    .btn:focus-visible { outline: none; box-shadow: var(--focus); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37, 99, 235, 0.28); }
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); }
+
     .cta-section {
       background: linear-gradient(135deg, #1e3a8a, var(--primary));
       padding: 6rem 2rem;
@@ -1036,7 +1065,21 @@
             </div>
             <div class="portal-arrow">Explore Hub →</div>
           </div>
+        
+
+
+                </div>
+
+        <div class="portal-buttons">
+          <a class="btn btn-primary" href="https://pcminst-certs.base44.app" target="_blank" rel="noopener">
+            PCMInst Certification Platform
+          </a>
+
+          <a class="btn btn-secondary" href="https://pcminst-certs.base44.app/VerifyCredential" target="_blank" rel="noopener">
+            Verify a Credential
+          </a>
         </div>
+
       </div>
     </section>
 
